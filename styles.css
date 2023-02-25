@@ -1,0 +1,57 @@
+* {
+	margin: 0;
+	padding: 0;
+	--img-width: clamp(0px, 40%, 66vh);
+}
+#backdrop {
+	position: absolute;
+	height: 100vh;
+	width: var(--img-width);
+	background-image: url(backdrop.png);
+	background-size: 66vh 100vh;
+	background-repeat: no-repeat;
+}
+#rest {
+	position: absolute;
+	left:var(--img-width);
+	height: 100vh;
+	width: calc(100% - var(--img-width));
+	background-color: #eee;
+}
+#title {
+	background-color: #eeeeee;
+	font-size: 30px;
+	text-align: left;
+	padding: 15vh 10% 10vh 10%;
+}
+#inputs {
+	background-color: white;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+}
+#text-a {
+	margin-left: 7%;
+}
+input, label {
+	display: block;
+	font-size: 17px;
+	width: 100%;
+}
+.input_box {
+	margin-left: 7%;
+	margin-top: 2.5vh;
+	display: inline-block;
+	width: 30%
+}
+button {
+	width: 160px;
+	height: 40px;
+	font-size: 20px;
+	font-family: Helvetica;
+	background-color: rgb(89 109 72);
+	color: white;
+	border-radius: 6px;
+	border: none;
+	margin-left: 7%;
+	margin-top: 2.5vh;
+}
